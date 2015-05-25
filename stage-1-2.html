@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Marilyn Durning's Notes</title>
+  <link rel="stylesheet" href="stage-1-css.css">
+</head>
+<body>
+<div class="page">
+    <div class="menuleftcontent">
+        <h3>TABLE OF CONTENTS</h3>
+    <ol>
+        <li><a href="#les1">The Basics of the Web and HTML</a>
+        <ul>         
+            <li><a href="#les1-1">What is A Web Page?</a></li>
+            <li><a href="#les1-2">How the Web Works?</a></li>
+            <li><a href="#les1-3">Computers are Stupid</a></li>
+            <li><a href="#les1-4">HTML Vocabulary</a></li>
+            <li><a href="#les1-5">Inline vs. Block Elements</a></li>
+        </ul>
+        </li>
+        <li><a href="#les2">Creating a Structured Document with HTML</a>
+        <ul>
+            <li><a href="#les2-1">HTMLs "Tree-Like" Structure</a></li>
+            <li><a href="#les2-2">HTMLs vs. CSS</a></li>
+            <li><a href="#les2-3">Boxes Everywhere</a></li>
+            <li><a href="#les2-4">Text Editors</a></li> 
+        </ul>   
+        </li>
+        <li><a href="#les3">Adding CSS Style to HTML Structure</a>
+        <ul>
+            <li><a href="#les3-1">What is Cascading?</a></li>
+            <li><a href="#les3-2">CSS and its Key Feature</a></li>
+            <li><a href="#les3-3">Avoiding Repitition</a></li>
+        </ul> 
+        </li>
+        <li><a href="#les4">Introduction to Serious Programming</a>
+        <ul>
+            <li><a href="#les4-1">Computer</a></li>
+            <li><a href="#les4-2">Computer Program</a></li>
+            <li><a href="#les4-3">Programming Language</a></li>
+            <li><a href="#les4-4">Grammar</a></li>
+            <li><a href="#les4-5">Python Expressions</a></li>
+        </ul> 
+        </li>
+        <li><a href="#les5">Variables and Strings</a>
+        <ul>
+            <li><a href="#les5-1">What is a variable in Python?</a></li>
+            <li><a href="#les5-2">What does it meant to assign a value to a variable? How is it done?</a></li>
+            <li><a href="#les5-3">What the equals sign means in <em>2 + 3 = 5</em> and <em>my_variable = 5?</em></a></li>
+            <li><a href="#les5-4">What are some ways variables are useful?</a></li>
+            <li><a href="#les5-5">What is a string?</a></li>
+        </ul> 
+        </li>
+        <li><a href="#les6">Input->Function->Output</a>
+        <ul>
+            <li><a href="#les6-1">What is a function (or "procedures")?</a></li>
+            <li><a href="#les6-2">What is the difference between making and using a function?</a></li>
+            <li><a href="#les6-3">How do functions help programmers avoid repetition?</a></li>
+            <li><a href="#les6-4">What happens if a function doesn't have a return statement?</a></li>
+            <li><a href="#les6-5">Control Flow and Loops: If and While</a></li>
+        </ul> 
+        </li>
+        <li><a href="#les7">Debugging</a>
+        <ul>
+            <li><a href="#les7-1">Debugging Strategies:</a></li>
+        </ul> 
+        </li>
+        <li><a href="#les8">Structured Data</a>
+        <ul>
+            <li><a href="#les8-1">List and For Loops</a></li>
+        </ul> 
+        </li>
+        <li><a href="#les9">How to solve Problems</a>
+        <ul>
+            <li><a href="#les9-1">5 steps in solving the problems</a></li>
+        </ul> 
+        </li>
+    </ol>  
+    </div>
+
+    <div class="maincontent">
+        <h1>Important Concepts</h1>
+            <div class="lesson">
+                <h2 id="les1">The Basics of the Web and HTML</h2>
+                <div id="les1-1">
+                    <div class="title">
+                        What is A Web Page?
+                    </div>
+                    <div class="description">
+                        <p>
+                            A webpage is a text document written in a language called <b>HTML</b>. <em>HTML</em> stands for <em>hyper text mark up language</em> which is the main document type of the web.
+                        </p>
+                    </div>
+                </div>
+                <div id="les1-2">
+                    <div class="title">
+                        How the Web Works?
+                    </div>
+                    <div class="description">
+                        <p>
+                            The web has four components - the <b>Browser</b>, <b>Internet</b>, <b>HTTP</b> (which is the main protocol of the web), and <b>Servers</b>. When a user open a web <em>browser</em> and connects to www.udacity.com by sending an <em>HTTP</em> request via <em>internet</em>, the <em>server</em> for www.udacity.com will then retrieves the document for the website and sends it back to the user's browser. Click this
+                            <a href="https://www.udacity.com/course/viewer/#!/c-nd000/l-3873828673/e-48329854/m-48480496"> video</a> for detailed explanation.
+                        </p>
+                    </div>
+                </div>
+                <div id="les1-3">
+                    <div class="title">
+                        Computers are Stupid.
+                    </div>
+                    <div class="description">
+                        <p>
+                            The "stupidity" of computer is very frustrating but once the programmer learn to write the correct "syntax" - meaning how to talk to computer in a in a languange the it can understand, this "stupidity" also gives programmer great power.
+                        </p>
+                    </div>
+                </div>
+                <div id="les1-4">
+                    <div class="title">
+                        HTML Vocabulary
+                     </div>
+                    <div class="description">
+                        <p>
+                            The Basic HTML vocabulary consists of <b>Tags</b>, <b>Elements</b> and <b>Attributes</b>. Most <b>Tags</b> have an opening and a closing tag. Some tags (called "void" tags) do not require a closing tag. An HTML <b>element</b> refers to everything within a set of opening and closing tags. The <b> Attribute</b> is a property of an HTML element. This <a href="https://www.udacity.com/course/viewer/#!/c-nd000/l-3873828673/m-48723444"> video</a> will show you the structure of the HTML <em>tags</em> and <em>elements</em> as well as to make links using <em>attributes</em>.
+                        </p>
+                    </div>
+                </div>
+                <div id="les1-5">
+                    <div class="title">
+                        Inline vs. Block Elements
+                    </div>
+                    <div class="description">
+                        <p>
+                            HTML elements are either <b>inline</b> or <b>block</b>. Block elements create an "invisible box" around the content inside of them. <em>a, span, br, tag</em> and <em>strong</em> are all <b>inline</b> elements while <em>div, p</em> and <em>form</em> are<b> block</b> elements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="lesson">
+                <h2 id="les2">Creating a Structured Document with HTML</h2>
+                <div id="les2-1">
+                    <div class="title">
+                        HTMLs "Tree-Like" Structure
+                    </div>
+                    <div class="description">
+                        <p>
+                            A "tree-like" structure or tree diagram is a way of representing the <b>hierarchical</b> nature of a <b>structure</b> in a graphical form. It is named a <em>"tree structure"</em> because the classic <b>representation</b> resembles a <b>tree</b>, even though the chart is generally upside down compared to an actual tree, with the "root" at the top and the "leaves" at the bottom.
+                        </p>
+                    </div>
+                </div>
+                <div id="les2-2">
+                    <div class="title">
+                        HTMLs vs. CSS
+                    </div>
+                    <div class="description">
+                        <p>
+                            HTML and CSS are both "languages". HTML controls the "structure" of a web page (with syntax and rules) while CSS controls the "style" of a page (or how it looks).
+                        </p>
+                    </div>
+                </div>
+                <div id="les2-3">
+                    <div class="title">
+                        Boxes Everywhere
+                    </div>
+                    <div class="description">
+                        <p>
+                            Everything on the web are boxes. A programmer must first start out with understanding and cutting up the boxes - from the big box and split it up piece by piece and work from big to small. 
+                        </p>
+                    </div>
+                </div>
+                <div id="les2-4">
+                    <div class="title">
+                        Text Editors
+                    </div>
+                    <div class="description">
+                        <p>
+                            A text editor is a computer program that allows you to create and edit files that contain plain text. This is very different than a robust word processing program like Microsoft Word or Google Docs, because they add special formatting that's hidden to the user. 
+                        </p>
+                        <p>
+                            Text editors are commonly used by web designers and developers because it provides maximum flexibility to create just about anything. This is where professionals "hand code" HTML, CSS, JavaScript, and many other languages. Text editors like Scratchpad.io and Codepen.io are great tools and best for small projects. But as your web page gets bigger, a program that you can keep on your computer like Sublime Text is recommended.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="lesson">
+                <h2 id="les3">Adding CSS Style to HTML Structure</h2>
+                <div id="les3-1">
+                    <div class="title">
+                        What is Cascading?
+                    </div>
+                    <div class="description">
+                        <p>
+                            Cascading Style Sheets (CSS) is a <em>style sheet language</em> used for describing the <em>look</em> and <em>formatting</em> of a document written in a <em>markup language</em>. 
+                        </p>
+
+                        <p>
+                            <b>Cascading</b> means that rules are applied not only to the elements they directly match, but also to all of those elements' child elements. However, if a child element has multiple, overlapping rules defined for it, the more specific rule takes effect.
+                        </p>
+                    </div>
+                </div>
+                <div id="les3-2">
+                    <div class="title">
+                        CSS and its Key Feature
+                    </div>
+                    <div class="description">
+                        <p>
+                            Inheritance is a key feature in CSS, it relies on the ancestor-descendant relationship to operate. In general, descendant elements inherit text-related properties, but box-related properties are not inherited. 
+                        </p>
+                    </div>
+                </div>
+                <div id="les3-3">
+                    <div class="title">
+                        Avoiding Repetition
+                    </div>
+                    <div class="description">
+                        <p>
+                            Inheritance prevents certain properties from being declared over and over again in a style sheet, allowing the software developers to write less CSS. It enhances faster-loading of web pages by users and enables the clients to save money on bandwidth and development costs.
+                        </p>
+
+                        <p>
+                            One way to avoid repetition is by usng the HTML <em>class</em> attribute in <em>div</em> tag. The <em>class</em> attribute provides a way of classifying similar elements then style them together in CSS. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="lesson">
+                <h2 id="les4">Introduction to Serious Programming</h2>
+                <div id="les4-1">
+                    <div class="title">
+                        Computer
+                    </div>
+                    <div class="description">
+                        <p>
+                            The power of the <em>computer</em> is to do anything. It is a universal machine that we can program to do essential computation. 
+                        </p>
+                    </div>
+                </div>
+                <div id="les4-2">
+                    <div class="title">
+                        Computer Program
+                    </div>
+                    <div class="description">
+                        <p>
+                            A <em>computer program</em>, or just a program, is a sequence of instructions, written to perform a specified task on a computer. Some examples of computer programs are web browsers, games, mobile apps, and simple print statements.
+                        </p>
+                    </div>
+                </div>
+                <div id="les4-3">
+                    <div class="title">
+                        Programming Language
+                    </div>
+                    <div class="description">
+                        <p>
+                           A <em>programming language</em> is a formal constructed language designed to communicate instructions to a machine, particularly a computer. Python is one example of a programming language.
+                        </p>
+                    </div>
+                </div>
+                <div id="les4-4">
+                    <div class="title">
+                        Grammar
+                    </div>
+                    <div class="description">
+                        <p>
+                           Why do we need to invent new languages like Python to program computers, rather than natural languages like English or Mandarin? One reason is.. <b>ambiguity</b>!
+                        </p>
+                        <p>
+                           In order to learn about computer programming, we have to learn new languange. Python has a grammar - the way we're writing grammar in Python is called <em>"notation"</em>. <b>BNF</b> <em>(Backus-Naur Form)</em> is one of the notation techniques for context-free grammars, often used to describe the syntax of languages used in computing.
+                        </p>
+                    </div>
+                </div>
+                <div id="les4-5">
+                    <div class="title">
+                        Python Expressions
+                    </div>
+                    <div class="description">
+                        <p>
+                            A Python <em>"expression"</em> is a legal Python statement. For example: <em>print 1 + 1</em> is a valid expression, but <em>print 1 + </em>(without a number at the end) is not.
+                        </p>
+
+                        <p>
+                            This <a href="https://www.udacity.com/course/viewer#!/c-ud552-nd/l-3527838955/e-48704311/m-48736065"> video</a> does a good job of explaining the Python grammar for <em>"expressions"</em>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lesson">
+                <h2 id="les5">Variables and Strings</h2>
+                <div id="les5-1">
+                    <div class="title">
+                        What is a variable in Python?
+                    </div>
+                    <div class="description">
+                        <p>
+                            Variables give programmers a way to give names to values. If my_variable is a variable with a value of 2, then the following code would print out 4:
+                        </p>
+                        <p class="tab"> 
+                            <em>print my_variable + my_variable</em>
+                        </p>
+                    </div>
+                </div>
+                <div id="les5-2">
+                    <div class="title">
+                        What does it meant to assign a value to a variable? How is it done?
+                    </div>
+                    <div class="description">
+                        <p>
+                            We can assign the value 2 to the variable my_variable by writing code like this:
+                        </p>
+                        <p class="tab"> 
+                            <em>my_variable = 2</em>
+                        </p>
+                        <p>
+                           We can even change the value of a variable by re-assigning it to a different value later.
+                        </P> 
+                    </div>
+                </div>
+                <div id="les5-3">
+                    <div class="title">
+                        What the equals sign means in <em>2 + 3 = 5</em> and <em>my_variable = 5?</em>
+                    </div>
+                    <div class="description">
+                        <p>
+                           In the line <em>2 + 3 = 5</em>, the equals sign means "is the same as".
+                        </p>
+                        <p>
+                           In the line <em>my_variable = 5</em>, the equals sign means "takes the value of". 
+                        </p> 
+                    </div>
+                </div>
+                <div id="les5-4">
+                    <div class="title">
+                        What are some ways variables are useful?
+                    </div>
+                    <div class="description">
+                        <p>
+                           Variables can be useful to programmers in many ways:
+                        </p>
+                        <p>
+                           They improve code readability by using names that make sense to humans.
+                        </p>
+                        <p>
+                          They give us a way to store the value of important data.
+                        </p>
+                        <p>
+                            They give us a way to change the value of something (like in the line days = days-1)
+                    </div>
+                </div>
+                <div id="les5-5">
+                    <div class="title">
+                        What is a string?
+                    </div>
+                    <div class="description">
+                        <p>
+                            Strings are sequence of characters between quote. A string without a quote is a variable. 
+                        </p>
+
+                        <p>
+                            What is the difference between 2 + 2 and "2" + "2"?
+                        <p>
+                            In Python, 2 is a number while "2" is a string.
+                        </p>
+                        <p>
+                            The code 2 + 2 would give 4.
+                        </p>
+                        <p>
+                            The code "2" + "2" would give "22".
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="lesson">
+                <h2 id="les6">Input->Function->Output</h2>
+                <div id="les6-1">
+                    <div class="title">
+                        What is a function (or "<em>procedures</em>")?
+                    </div>
+                    <div class="description">
+                        <p>
+                            A function is something that takes input, does something to that input, and then produces output. For example, a function named square might take a number as input and produce the square of that number as output.
+                        </p>
+                    </div>
+                </div>
+                <div id="les6-2">
+                    <div class="title">
+                        What is the difference between making and using a function?
+                    </div>
+                    <div class="description">
+                        <p>
+                           Functions are made by starting a line of code with the keyword def and then giving a function name followed by the function parameters in parentheses. The line must end with a <em>: colon</em>. These parameters will eventually be replaced by actual values when the function is used (called).
+                        </p>
+                        <p>
+                            In the <em>"body"</em> of the function, we write the code that specifies what to do with the input parameters. Every line in the function must be indented. And If you want your function to produce output, it must end with a return statement.
+                        </p>
+                        <p>
+                            For example, the following code could be the definition of a function called square:
+                            <p class="tab">
+                                <em>def square(x):</em>
+                                <br><em>answer = x * x</em>
+                                <br><em>return answer</em>
+                            
+                        </p>
+                        <p>
+                            To use a function, we write the name of the function followed by the value(s) we want to give it in parentheses. Like this:
+                            <p class="tab">
+                                <em>print square(4)</em>
+                                <br><em>>>>>16</em>
+                            
+                        </p>
+                    </div>
+                </div>
+                <div id="les6-3">
+                    <div class="title">
+                        How do functions help programmers avoid repetition?
+                    </div>
+                    <div class="description">
+                        <p>
+                            Functions are tools that programmers can create and reuse forever! Once you've defined a function once, you never have to define it again.
+                        </p>
+                    </div>
+                </div>
+                <div id="les6-4">
+                    <div class="title">
+                        What happens if a function doesn't have a return statement?
+                    </div>
+                    <div class="description">
+                        <p>
+                          The <em>return</em> keyword tells Python exactly what the function should produce as output. If a function doesn't have a return statement, then you'll get behavior like this:
+                            <p class="tab">
+                            <em>def add_two(x):</em>
+                            <br><em>answer = x + 2</em>
+                            <br><em>new_number = add_two(7)</em>
+                            <br><em>print new_number</em>
+                            <br><em>>>>>None</em>
+                            
+                        </p>
+                    </div>
+                </div>
+                <div id="les6-5">
+                    <div class="title">
+                        Control Flow and Loops: If and While
+                    </div>
+                    <div class="description">
+                        <p>
+                          The general Python syntax for a simple if statement is:
+                            <p class="tab">
+                            <em><b>if</b> condition :</em>
+                            <br><em>indentedSatementBlock</em>
+                        </p>
+                        <p>
+                            If the condition is true, then do the indented statements. If the condition is not true, then skip the indented statements.
+                        </p>
+                        <p>
+                            <em><b>While</b></em> loops, like the <em>ForLoop</em>, are used for repeating sections of code - but unlike a <em>for</em> loop, the <em>while</em> loop will not run <em>n</em> times, but until a defined condition is met.    
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="lesson">
+                <h2 id="les7">Debugging</h2>
+                <div id="les7-1">
+                    <div class="title">
+                         Debugging Strategies:
+                    </div>
+                    <div class="description">
+                            
+                            <br>1.  Examine error messages when programs crash.
+                            <br>The last line of Python Tracebacks will tell you what went wrong. Reading backwards from there will tell you more about where the problem occurred.
+                            <br>2.  Work from example code.
+                            <br>If your modified code doesn't work, comment it out and do step-by-step modifications to the example code until it does what you want.
+                            <br>3.  Make sure examples work.
+                            <br>Just because you find example code doesn't mean it will work in your system. Check the example code you're using to make sure it behaves the way you expect.
+                            <br>4.  Check (print) intermediate results.
+                            <br>When your code doesn't crash, but doesn't behave as expected, add print statements to your program to see where in the code things stop behaving correctly.
+                            <br>5.  Keep and compare old versions.
+                            <br>When you have a working version of your code, save it before you add to the code. This will give you something to go back to if you introduce too many new bugs.
+                            
+                     </div>
+                </div>
+            </div>
+
+
+            <div class="lesson">
+                <h2 id="les8">Structured Data</h2>
+                <div id="les8-1">
+                    <div class="title">
+                         List and For Loops
+                    </div>
+                    <div class="description">
+                        <p>
+                            <br>We can use for loops to go through a list of strings
+                            <br>We can use for loops on nested lists too!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="lesson">
+                <h2 id="les9">How to solve Problems</h2>
+                <div id="les9-1">
+                    <div class="title">
+                         Dave's suggested 5 steps in solving the problems
+                    </div>
+                    <div class="description">
+                            <br>1. Understand the inputs
+                            <br>2. Understand the Outputs
+                            <br>3. Work through some examples by hand
+                            <br>4. Simple mechanical solution
+                            <br>5. Develop incrementally and test as we go
+                          
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+    
+    <div class="clearingdiv"></div>
+</div>
+</body>
